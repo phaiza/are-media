@@ -1,9 +1,13 @@
 import React, { Component } from 'react'
-import './App.css';
-import Teaser from './Teaser';
-import Header from './Header';
-import Sidebar from './Sidebar';
-import { data } from "./data-feed";
+import './App.css';/* The following line can be included in your src/index.js or App.js file */
+
+import './styles.scss';
+
+import Teaser from '../Teaser';
+import Header from '../Header';
+import Sidebar from '../Sidebar';
+import { data } from "../data-feed";
+import {Container, Col, Row} from "react-bootstrap";
 
 class App extends Component {
   constructor(props) {
@@ -20,7 +24,8 @@ class App extends Component {
   
   render() {
     return (
-      <div>
+      <>
+      <Container>
         <Header/>
         <Sidebar/>
        <div>
@@ -30,7 +35,8 @@ class App extends Component {
           );
         })}
       </div>
-      </div>
+      </Container>
+      </>
     )
   }
 }
