@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./App.css"; /* The following line can be included in your src/index.js or App.js file */
 import "./styles.scss";
 import Teaser from "../Teaser";
 import Header from "../Header";
