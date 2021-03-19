@@ -1,0 +1,14 @@
+.teaser {
+  margin: 50px 0;
+  &__image {
+    min-height: 300px;
+    max-height: 300px;
+    overflow: hidden;
+  }
+  &__title {
+    margin: 20px 0;
+  }
+  &__summary {
+    margin: 20px 0;
+  }
+}

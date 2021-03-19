@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap");
+
 /* The following line can be included in a src/App.scss */
 
 @import "~bootstrap/scss/bootstrap";
+
+body {
+  font-family: Merriweather, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1rem;
+}
