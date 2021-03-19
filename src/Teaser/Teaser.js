@@ -14,6 +14,7 @@ const Teaser = (props) => {
             fluid
             rounded
             className="teaser__image teaser__image-tablet"
+            alt={teaser.contentImageUrl}
           />
           <h2 className="teaser__title">{teaser.contentTitle}</h2>
           <p className="teaser__summary">{teaser.contentSummary}</p>
