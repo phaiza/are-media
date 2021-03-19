@@ -1,11 +1,10 @@
 import React from "react";
 import Image from "react-bootstrap/Image";
 import "./teaser.scss";
-import { Container, Col, Row } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 
 const Teaser = (props) => {
   const { teaser, featuredPost } = props;
-  console.log(featuredPost);
   if (featuredPost) {
     return (
       <Col xs={12} sm={12} lg={6}>
