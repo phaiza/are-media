@@ -16,6 +16,7 @@ class App extends Component {
   componentDidMount() {}
 
   render() {
+    let count = 1;
     return (
       <>
         <Container>
@@ -29,7 +30,15 @@ class App extends Component {
             <Col md={8} xs={12}>
               <Row>
                 {data.map((teaser, key) => {
-                  return <Teaser teaser={teaser} key={key} />;
+                  if (count === 1) {
+                    count++;
+                    return (
+                      <Teaser teaser={teaser} key={key} featuredPost={true} />
+                    );
+                  } else
+                    return (
+                      <Teaser teaser={teaser} key={key} featuredPost={false} />
+                    );
                 })}
               </Row>
             </Col>

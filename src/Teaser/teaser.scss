@@ -1,9 +1,13 @@
 .teaser {
   margin: 50px 0;
   &__image {
-    min-height: 300px;
+    min-height: auto;
     max-height: 300px;
     overflow: hidden;
+  }
+  &__image-tablet {
+    width: 100%;
+    min-height: auto;
   }
   &__title {
     margin: 20px 0;
