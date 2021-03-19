@@ -14,7 +14,7 @@ const Teaser = (props) => {
             fluid
             rounded
             className="teaser__image teaser__image-tablet"
-            alt={teaser.contentImageUrl}
+            alt={teaser.contentTitle}
           />
           <h2 className="teaser__title">{teaser.contentTitle}</h2>
           <p className="teaser__summary">{teaser.contentSummary}</p>
@@ -30,6 +30,7 @@ const Teaser = (props) => {
           fluid
           rounded
           className="teaser__image"
+          alt={teaser.contentTitle}
         />
         <h2 className="teaser__title">{teaser.contentTitle}</h2>
         <p className="teaser__summary">{teaser.contentSummary}</p>
